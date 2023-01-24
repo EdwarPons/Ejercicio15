@@ -1,4 +1,7 @@
 function fibonacci (num) {
+ if (num < 1) return [];
+ else if (num == 1) return [1];
+
  fibonacciArray = [1, 1];
 
  for (let i = 0; i < num - 2; i++) {
@@ -8,4 +11,4 @@ function fibonacci (num) {
  return fibonacciArray;
 }
 
-console.log(fibonacci(10));
+console.log(fibonacci(-20));
